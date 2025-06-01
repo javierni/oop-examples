@@ -1,4 +1,4 @@
-# Fundaments de la Orientación a Objetos
+# Fundamentals of object orientation
 
 This repository contains code examples in Python preprared for the session about 'Fundamentals of object orientation' inside the block of 'Best programming practices' for the course 'Software development (Software engineering) for researchers'.
 
