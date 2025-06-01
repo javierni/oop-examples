@@ -2,8 +2,8 @@
 
 class Dog:
     def __init__(self, name, age):
-        self._name = name # Atributo privado
-        self._age = age # Atributo privado
+        self._name = name # Private attribute
+        self._age = age # Private attribute
 
     def set_name(self, new_name):
         self._name = new_name
@@ -18,7 +18,7 @@ class Dog:
         return self._age
 
 miles = Dog("Miles",4)
-miles._age = 6 # Acceso no recomendado
-miles._age # Acceso no recomendado
-miles.set_age(7) # Acceso recomendado
-miles.get_age() # Acceso recomendado
+miles._age = 6 # Not recommended access
+miles._age # Not recommended access
+miles.set_age(7) # Recommended access
+miles.get_age() # Recommended access

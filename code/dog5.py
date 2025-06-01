@@ -2,8 +2,8 @@
 
 class Dog:
     def __init__(self, name, age):
-        self.__name = name # Atributo privado
-        self.__age = age # Atributo privado
+        self.__name = name # Private attribute
+        self.__age = age # Private attribute
     def set_age(self, new_age):
         self.__age = new_age
     def get_age(self):

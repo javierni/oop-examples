@@ -5,7 +5,7 @@ class Dog:
         self.name = name
         self.age = age
 
-    # __str__: método especial que devuelve representación en cadena
+    # __str__: special method returning a string representation
     def __str__(self):
         return f"{self.name} is {self.age} years old"
     

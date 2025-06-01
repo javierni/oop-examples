@@ -1,7 +1,7 @@
 # dog2.py
 
 class Dog:
-    # Utilizar identación para indicar que un atributo/método pertenece a la clase​
+    # Identation to indicate that an attribute/method belongs to the class
     species = "Canis familiaris"
     def __init__(self, name, age):
         self.name = name

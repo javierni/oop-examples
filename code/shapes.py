@@ -2,11 +2,11 @@
 from abc import ABC, abstractmethod
 from math import pi
 
-# clase abstracta: no hay instancias directas​
+# abstract class: no direct instances​
 class Shape(ABC):
     @abstractmethod
     def get_area(self):
-        pass # método abstracto que se debe redefinir en subclase
+        pass # abstract method to be redefined in a subclass
     @abstractmethod
     def get_perimeter(self):
         pass
