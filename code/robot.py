@@ -27,10 +27,10 @@ class Arm:
     def __init__(self):
         self.position = 0
     def move_up(self, distance=1):
-        self.position += 1
+        self.position += distance
         print(f"Moving arm {distance} cm up...")
     def move_down(self, distance=1):
-        self.position -= 1
+        self.position -= distance
         print(f"Moving arm {distance} cm down...")
     def weld(self):
         print("Welding...")
