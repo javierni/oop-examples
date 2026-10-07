@@ -6,7 +6,6 @@ class Player:
 class Tournament:
     def __init__(self):
         self._players = set()
-        self._players.add(Player())
         self._maxNumPlayers = 2
 
     def isPlayerAccepted(self, p: Player) -> bool:
@@ -32,20 +31,22 @@ class Tournament:
             raise ValueError('player not added')
         # check invariant:  getMaxNumPlayers()>0
         if self.getMaxNumPlayers() <= 0:
-            raise ValueError("illegal number of players")
+            raise ValueError("illegal maximum number of players")
 
 
 torneo = Tournament()
 jugador = Player()
 torneo.addPlayer(jugador)
+
 try:
     # no se puede incorporar 2 veces al mismo jugador
     torneo.addPlayer(jugador)
 except ValueError as err:
-    print('Error: ',err) 
-otroJugador = Player()
+    print('Error: ',err) # Error:  the player can't be added twice
+
 try:
+    torneo.addPlayer(Player())
     # numero maximo de jugadores alcanzado
-    torneo.addPlayer(otroJugador)
+    torneo.addPlayer(Player())
 except ValueError as err:
-    print('Error: ',err) 
+    print('Error: ',err) # Error:  maximum number of players reached
